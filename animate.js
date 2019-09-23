@@ -39,14 +39,16 @@ function handleShipAnimation() {
 
 function RenderNewObject(context) {
   // Draw a new item here using the canvas 'context' variable
-  context.fillRect(NEW_OBJECT.x +590,NEW_OBJECT.y,10,100);
-
+  context.fillRect(TOP_WALL.x,TOP_WALL.y,10,100);
+  context.fillRect (BOTTOM_WALL.x, BOTTOM_WALL.y, 10, 100);
   }
 
-
 function HandleNewObjectMovement() {
-  if(NEW_OBJECT.x >= 0){
-    NEW_OBJECT.x -= 1;
+  if(TOP_WALL.x >= 0){
+    TOP_WALL.x -= 1;
+  }
+  if(BOTTOM_WALL.x >= 0){
+    BOTTOM_WALL.x -= 1;
   }
 }
 
