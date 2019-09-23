@@ -39,17 +39,15 @@ function handleShipAnimation() {
 
 function RenderNewObject(context) {
   // Draw a new item here using the canvas 'context' variable
-  context.fillRect(NEW_OBJECT.x,NEW_OBJECT.y,25,25);
-  if(NEW_OBJECT.x >= 0 && NEW_OBJECT.x< GAME.canvas.width-50){
-    NEW_OBJECT.x += 10;
+  context.fillRect(NEW_OBJECT.x +590,NEW_OBJECT.y,10,100);
+
   }
 
 
-}
-
 function HandleNewObjectMovement() {
-  //NEW_OBJECT.x += 1;
-  //NEW_OBJECT.y += 1;
+  if(NEW_OBJECT.x >= 0){
+    NEW_OBJECT.x -= 1;
+  }
 }
 
 function runGame() {
