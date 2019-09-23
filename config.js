@@ -16,8 +16,12 @@ var SPACE_SHIP = {
   }
 };
 
-var NEW_OBJECT = {
-  x : 25,
-  y : 25
+var TOP_WALL = {
+  x : 590,
+  y : 0
 
+};
+var BOTTOM_WALL = {
+  x : 590,
+  y : 200
 };
