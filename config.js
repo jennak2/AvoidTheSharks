@@ -25,3 +25,18 @@ var BOTTOM_WALL = {
   x : 590,
   y : 200
 };
+
+var TOP_WALLTWO = {
+  x : 295,
+  y : 0
+
+};
+var BOTTOM_WALLTWO = {
+  x : 295,
+  y : 200
+};
+
+var PLAYER = {
+  x : 100,
+  y : 100
+};
